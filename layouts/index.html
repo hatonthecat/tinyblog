@@ -6,10 +6,10 @@
     {{ with .Content }} {{ . }} {{ end }}
   {{ end }}
 
-  <h3>
+  <h1 class="list">
     Recent Posts
     {{ if gt .Paginator.PageNumber 1 }} (page {{ .Paginator.PageNumber }}) {{ end }}
-  </h3>
+  </h1>
 
   {{ range $paginator.Pages }}
     {{ partial "list-item" . }}

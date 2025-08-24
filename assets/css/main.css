@@ -67,6 +67,13 @@ h1 {
     font-size: 2rem;
 }
 
+/* This is an h2 in disguise */
+h1.list {
+    font-size: 1.6rem;
+    padding-left: 0.33em;
+    border-left: 0.065rem solid black;
+}
+
 h2, h3, h4, h5, h6 {
     padding-left: 0.33em;
     border-left: 0.065rem solid black;

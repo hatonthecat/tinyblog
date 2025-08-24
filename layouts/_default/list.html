@@ -1,9 +1,9 @@
 {{ partial "header" . }}
 <main>
-  <h3>
+  <h1 class="list">
     {{ with .Title }} {{ . }} {{ end }}
     {{ if gt .Paginator.PageNumber 1 }} (page {{ .Paginator.PageNumber }}) {{ end }}
-  </h3>
+  </h1>
 
   {{ range (.Paginator (.Site.Params.itemsPerPage | default (int 5)) ).Pages }}
     {{ partial "list-item" . }}
