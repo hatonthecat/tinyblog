@@ -4,7 +4,7 @@
     <div class="post-open-title">
       <h1>{{ .Title }}</h1>
       {{- if .Date }}
-        <p>Posted: {{ .Date | time.Format ":date_medium" }}
+        <p><i>Published: {{ .Date | time.Format ":date_medium" }}</i>
         {{- if ne .Lastmod .Date }}
           <i>Updated: {{ .Lastmod | time.Format ":date_medium" }}</i>
         {{- end }}</p>
